@@ -13,10 +13,10 @@ def a_plus_abs_b(a, b):
     3
     """
     if b < 0:
-        f = sub(a,b)
+        f = sub
     else:
-        f = add(a,b)
-    return f
+        f = add
+    return f(a, b)
 
 def a_plus_abs_b_syntax_check():
     """Check that you didn't change the return statement of a_plus_abs_b.
@@ -42,7 +42,7 @@ def two_of_three(i, j, k):
     >>> two_of_three(5, 5, 5)
     50
     """
-    return _____
+    return min((i*i + j*j), (j*j + k*k), (k*k + i*i))
 
 def two_of_three_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.

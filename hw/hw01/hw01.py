@@ -66,7 +66,16 @@ def largest_factor(n):
     1
     """
     "*** YOUR CODE HERE ***"
-
+    
+    factor = n - 1
+    
+    while (factor > 1):
+        if n % factor == 0:
+            return factor
+        factor -= 1
+    else:
+        return 1
+   
 
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
